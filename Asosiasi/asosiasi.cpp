@@ -8,7 +8,7 @@ class pasien{
     public:
     string nama;
     vector<dokter*> daftar_dokter;
-    pasien(string pNama); nama(pNama) {
+    pasien(string pNama): nama(pNama) {
         cout << "Pasien \"" << nama << "\" ada\n";
     }
     ~pasien() {
@@ -27,5 +27,9 @@ class dokter {
         dokter(string pNama): nama(pNama) {
             cout << "dokter \"" << nama << "\" ada\n";
         }
+        ~dokter() {
+            cout << "Dokter \"" << nama
+            << "\" tidak ada\n";
+        }
     
-}
+};
