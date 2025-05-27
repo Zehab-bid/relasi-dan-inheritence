@@ -28,4 +28,12 @@ public:
     pelajar(string pNama, string pSekolah) : orang(pNama), sekolah(pSekolah) {
         cout << "pelajar dibuat\n" << endl;
     }
-}
+
+    ~pelajar() {
+        cout << "pelajar dihapus\n" << endl;
+    }
+
+    string perkenalan() {
+        return "Hallo, nama saya " + nama + " dari sekolah " + sekolah + "\n\n";
+    }
+};
