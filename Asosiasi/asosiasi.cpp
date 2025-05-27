@@ -31,5 +31,13 @@ class dokter {
             cout << "Dokter \"" << nama
             << "\" tidak ada\n";
         }
+        void tambahanPasien(pasien*);
+        void cetakPasien();
     
 };
+
+void pasien::cetakDokter() {
+    cout << "Daftar dokter yang menangani pasien \""
+    << this->nama << "\":\n";
+    // aouto digunakan dalam perulangan
+}
